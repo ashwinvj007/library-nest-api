@@ -13,6 +13,24 @@ export class User extends Document {
 
   @Prop()
   password: string;
+
+  @Prop()
+  phoneNumber: string;
+
+  @Prop()
+  address: string;
+
+  @Prop()
+  gender: string;
+
+  // @Prop()
+  // dob: string; // Assuming age is a number
+
+  @Prop()
+  occupation: string;
+
+  @Prop()
+  bio: string;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);
